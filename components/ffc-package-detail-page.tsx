@@ -96,7 +96,7 @@ export default function FFCPackageDetailPage({ package: pkg }: PackageDetailPage
             "name": `${pkg.name} - Candle Light Dinner Package`,
             "description": pkg.shortDescription,
             "image": pkg.thumbnail,
-            "brand": { "@type": "Brand", "name": "HIVY - Place for Celebrations" },
+            "brand": { "@type": "Brand", "name": "HIVY - Candle Light Dinner in Surat" },
             "offers": {
               "@type": "Offer",
               "price": pkg.price,
@@ -253,7 +253,7 @@ export default function FFCPackageDetailPage({ package: pkg }: PackageDetailPage
               {/* Tagline */}
               <div className="bg-amber-50 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
                 <p className="text-neutral-900 italic text-sm md:text-base">
-                  💍 {pkg.name} — where every occasion turns into a forever memory under the stars ✨🌙
+                  💍 {pkg.name} — where every occasion turns into a forever memory in a romantic setting ✨🌙
                 </p>
               </div>
 

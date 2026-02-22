@@ -60,7 +60,7 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
             "description": keyword.metaDescription,
             "provider": {
               "@type": "LocalBusiness",
-              "name": "HIVY - Place for Celebrations",
+              "name": "HIVY - Candle Light Dinner in Surat",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Surat",
@@ -123,13 +123,13 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <Badge className="mb-4 bg-white/20 text-white border-white/30">
-                {service.emoji} HIVY - Place for Celebrations
+                {service.emoji} HIVY - Candle Light Dinner in Surat
               </Badge>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-serif">
                 {keyword.h1}
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8 max-w-xl">
-                Create magical {keyword.title.toLowerCase()} moments at HIVY - Place for Celebrations. Premium romantic celebration venue with stunning setups and unforgettable experiences.
+                Create magical {keyword.title.toLowerCase()} candlelight moments at HIVY - Candle Light Dinner in Surat. Premium romantic candlelight dinner venue with stunning setups and unforgettable experiences.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -158,11 +158,9 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
               </div>
             </div>
             
-            {/* Hero Visual */}
-            <div className="hidden lg:flex justify-center">
-              <div className="w-72 h-72 rounded-full bg-white/10 flex items-center justify-center">
-                <span className="text-[7rem]">{service.emoji}</span>
-              </div>
+            {/* Hero Booking Form */}
+            <div className="hidden lg:block">
+              <FFCBookingForm variant="hero" pageTitle={keyword.title} />
             </div>
           </div>
         </div>
@@ -183,7 +181,7 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
             <div className="lg:col-span-2">
               <article className="prose prose-lg max-w-none">
                 <h2 className="text-2xl font-bold mb-6 font-serif">
-                  {keyword.title} at HIVY - Place for Celebrations
+                  {keyword.title} Candlelight Dinner at HIVY
                 </h2>
                 
                 {/* Introduction - from generated content */}
@@ -199,13 +197,13 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
                   <div className="grid md:grid-cols-2 gap-3">
                     {[
                       "3 Mesmerizing Hours of Private Celebration",
-                      "Welcome Drink & Celebration Cake",
-                      "Romantic Decorations & Setup",
-                      "Candle-Lit Ambiance",
+                      "Welcome Drink & Gourmet Dessert",
+                      "Romantic Candlelight Decorations & Setup",
+                      "Premium Candle-Lit Ambiance",
                       "Soft Romantic Music",
-                      "Photo-Ready Backdrop",
-                      "Delicious Café-Style Food",
-                      "Panoramic City Views"
+                      "Photo-Ready Candlelight Backdrop",
+                      "Gourmet Multi-Course Dinner",
+                      "Premium Romantic Candlelight Ambiance"
                     ].map((item, index) => (
                       <div key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-rose-900 flex-shrink-0" />
@@ -226,7 +224,7 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
                 ))}
 
                 <h3 className="text-xl font-bold mb-4">
-                  Why Choose HIVY - Place for Celebrations?
+                  Why Choose HIVY - Candle Light Dinner in Surat?
                 </h3>
                 
                 <ul className="space-y-3 mb-8">

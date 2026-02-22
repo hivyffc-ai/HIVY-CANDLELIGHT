@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     template: "%s | HIVY - Candle Light Dinner Surat",
   },
   description:
-    "Best candle light dinner in Surat, Gujarat. Private rooftop & glass house setups with gourmet dining. Premium romantic experiences for couples. Book now.",
+    "Best candle light dinner in Surat, Gujarat. Private & glass house setups with gourmet dining. Premium romantic experiences for couples. Book now.",
   keywords: [
     "hivy surat",
     "candle light dinner surat",
     "candlelight dinner surat",
     "romantic dinner surat",
     "private candle light dinner",
-    "rooftop candle light dinner surat",
+    "private candle light dinner surat",
     "luxury candle light dinner",
     "candle light dinner for couples",
     "candle light dinner near me",
@@ -138,7 +138,7 @@ const jsonLd = {
       "alternateName": "HIVY Surat",
       "description": "Best romantic celebration venue in Surat, Gujarat. Birthday surprises, candlelight dinners, anniversary celebrations, proposals, pre-wedding shoots. Premium private experiences.",
       "url": "https://candlelightdinnersurat.com",
-      "telephone": "+91-9727027278",
+      "telephone": "+91 9727027278",
       "email": "hello@hivy.co.in",
       "priceRange": "₹₹₹",
       "currenciesAccepted": "INR",
@@ -284,7 +284,7 @@ const jsonLd = {
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-9727027278",
+        "telephone": "+91 9727027278",
         "contactType": "reservations",
         "areaServed": "Surat",
         "availableLanguage": ["English", "Hindi", "Gujarati"]

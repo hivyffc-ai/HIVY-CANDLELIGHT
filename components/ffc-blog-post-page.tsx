@@ -104,8 +104,8 @@ export default function FFCBlogPostPage({ post }: FFCBlogPostPageProps) {
             <div className="mt-10 p-6 bg-gradient-to-r from-stone-100 to-stone-50 rounded-2xl">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Ready to celebrate?</h3>
-                  <p className="text-gray-600 text-sm">Book your special moment at HIVY - Place for Celebrations</p>
+                  <h3 className="font-bold text-gray-900 mb-1">Ready for a romantic candlelight dinner?</h3>
+                  <p className="text-gray-600 text-sm">Book your candlelight dinner at HIVY - Candle Light Dinner in Surat</p>
                 </div>
                 <div className="flex gap-3">
                   <Button 
@@ -167,10 +167,10 @@ export default function FFCBlogPostPage({ post }: FFCBlogPostPageProps) {
       <section className="py-12 bg-gradient-to-br from-rose-950 via-neutral-900 to-amber-900 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 font-serif">
-            Ready to Create Your Own Magical Moment?
+            Ready to Create Your Own Romantic Candlelight Moment?
           </h2>
           <p className="text-white/80 mb-6 max-w-xl mx-auto">
-            Book your candle light dinner at HIVY and make unforgettable memories with your loved one.
+            Book your candlelight dinner at HIVY and make unforgettable romantic memories with your loved one.
           </p>
           <FFCBookNowButton pageTitle={`Blog - ${post.title}`} className="text-lg px-8 py-6" />
         </div>
@@ -201,20 +201,20 @@ function generateArticleContent(post: BlogPost): string {
   
   const contentTemplates: { [key: string]: string } = {
     'Birthday': `
-      <h2>Make Their Birthday Unforgettable</h2>
-      <p>Birthdays are special occasions that deserve memorable celebrations. At HIVY - Place for Celebrations in Surat, we specialize in creating magical birthday experiences that your loved ones will cherish forever.</p>
+      <h2>Make Their Birthday Unforgettable with a Candlelight Dinner</h2>
+      <p>Birthdays are special occasions that deserve memorable candlelight dinner celebrations. At HIVY - Candle Light Dinner in Surat, we specialize in creating magical birthday candlelight experiences that your loved ones will cherish forever.</p>
       
-      <h3>Why Choose a Rooftop Birthday Celebration?</h3>
-      <p>There's something magical about celebrating under the stars. Our rooftop venue offers:</p>
+      <h3>Why Choose a Private Birthday Candlelight Dinner?</h3>
+      <p>There's something magical about celebrating with a candlelight dinner setting. Our private venue offers:</p>
       <ul>
-        <li><strong>Privacy</strong> - Exclusive space just for your celebration</li>
-        <li><strong>Stunning Views</strong> - Beautiful Surat skyline as your backdrop</li>
-        <li><strong>Romantic Ambiance</strong> - Fairy lights, candles, and elegant decor</li>
-        <li><strong>Perfect Photos</strong> - Instagram-worthy setups for memories</li>
+        <li><strong>Privacy</strong> - Exclusive candlelight space just for your celebration</li>
+        <li><strong>Stunning Ambiance</strong> - Beautiful Surat candlelight dinner venue as your backdrop</li>
+        <li><strong>Romantic Candlelight Ambiance</strong> - Fairy lights, candles, and elegant decor</li>
+        <li><strong>Perfect Photos</strong> - Instagram-worthy candlelight setups for memories</li>
       </ul>
       
-      <h3>Birthday Surprise Ideas at HIVY - Place for Celebrations</h3>
-      <p>From midnight surprises to elaborate themed decorations, we can help you plan the perfect birthday celebration:</p>
+      <h3>Birthday Candlelight Dinner Ideas at HIVY</h3>
+      <p>From midnight surprises to elaborate themed candlelight decorations, we can help you plan the perfect birthday candlelight dinner:</p>
       <ol>
         <li><strong>Midnight Surprise</strong> - Bring them at 11:30 PM for a cake cutting at midnight</li>
         <li><strong>Balloon Surprise</strong> - Fill the space with their favorite color balloons</li>
@@ -223,32 +223,32 @@ function generateArticleContent(post: BlogPost): string {
         <li><strong>Custom Cake</strong> - Order a personalized cake with their favorite design</li>
       </ol>
       
-      <h3>Our Birthday Packages</h3>
-      <p>We offer various packages starting from ₹6,500 that include decorations, cake, mocktails, and a private 3-hour celebration slot. Each package can be customized to match your vision.</p>
+      <h3>Our Birthday Candlelight Dinner Packages</h3>
+      <p>We offer various candlelight dinner packages starting from ₹5,100 that include decorations, gourmet meal, welcome drinks, and a private 3-hour candlelight dinner slot. Each package can be customized to match your vision.</p>
       
-      <h3>Book Your Birthday Celebration</h3>
-      <p>Don't let another birthday pass by without making it special. Contact us today to book your birthday surprise at Surat's most romantic rooftop cafe.</p>
+      <h3>Book Your Birthday Candlelight Dinner</h3>
+      <p>Don't let another birthday pass by without making it special. Contact us today to book your birthday candlelight dinner at Surat's most romantic private venue.</p>
     `,
     'Proposal': `
-      <h2>Planning the Perfect Proposal in Surat</h2>
-      <p>A marriage proposal is one of life's most meaningful moments. At HIVY - Place for Celebrations, we've helped countless couples create their perfect "yes" moment on our beautiful rooftop.</p>
+      <h2>Planning the Perfect Candlelight Proposal in Surat</h2>
+      <p>A marriage proposal is one of life's most meaningful moments. At HIVY - Candle Light Dinner in Surat, we've helped countless couples create their perfect "yes" moment with our beautiful private candlelight setups.</p>
       
-      <h3>Why Our Rooftop is Perfect for Proposals</h3>
-      <p>The setting of your proposal matters. Here's why couples choose our venue:</p>
+      <h3>Why Our Candlelight Venue is Perfect for Proposals</h3>
+      <p>The setting of your candlelight proposal matters. Here's why couples choose our venue:</p>
       <ul>
-        <li><strong>Complete Privacy</strong> - No other guests to interrupt your moment</li>
-        <li><strong>Romantic Setting</strong> - Fairy lights, candles, and rose petals</li>
-        <li><strong>Stunning Backdrop</strong> - Perfect for photos and videos</li>
-        <li><strong>Weather Perfect</strong> - Open rooftop with beautiful evening skies</li>
+        <li><strong>Complete Privacy</strong> - No other guests to interrupt your candlelight moment</li>
+        <li><strong>Romantic Candlelight Setting</strong> - Premium candles, fairy lights, and rose petals</li>
+        <li><strong>Stunning Backdrop</strong> - Perfect for candlelight photos and videos</li>
+        <li><strong>Weather Perfect</strong> - Beautiful private venue with stunning evening ambiance</li>
       </ul>
       
-      <h3>Proposal Setup Options</h3>
-      <p>We offer various romantic setups for your proposal:</p>
+      <h3>Candlelight Proposal Setup Options</h3>
+      <p>We offer various romantic candlelight setups for your proposal:</p>
       <ol>
-        <li><strong>Heart Arch Setup</strong> - A beautiful heart-shaped arch decorated with flowers and lights</li>
-        <li><strong>Balloon Proposal</strong> - "Will You Marry Me?" spelled out in balloons</li>
+        <li><strong>Heart Arch Candlelight Setup</strong> - A beautiful heart-shaped arch decorated with flowers and candles</li>
+        <li><strong>Candlelit Balloon Proposal</strong> - "Will You Marry Me?" spelled out in balloons with candles</li>
         <li><strong>Candlelit Path</strong> - A pathway of candles leading to the proposal spot</li>
-        <li><strong>Rose Petal Heart</strong> - A giant heart made of rose petals on the floor</li>
+        <li><strong>Rose Petal Heart with Candles</strong> - A giant heart made of rose petals surrounded by candles</li>
       </ol>
       
       <h3>Tips for a Successful Proposal</h3>
@@ -265,20 +265,20 @@ function generateArticleContent(post: BlogPost): string {
       <p>Celebrate your engagement with champagne, cake, and a romantic candlelight dinner. We'll make sure your special night continues to be magical.</p>
     `,
     'Anniversary': `
-      <h2>Celebrate Your Love Story</h2>
-      <p>Every anniversary marks another beautiful chapter in your love story. Whether it's your 1st or 50th, HIVY - Place for Celebrations offers the perfect setting to celebrate your journey together.</p>
+      <h2>Celebrate Your Love Story with a Candlelight Dinner</h2>
+      <p>Every anniversary marks another beautiful chapter in your love story. Whether it's your 1st or 50th, HIVY - Candle Light Dinner in Surat offers the perfect candlelight dinner setting to celebrate your journey together.</p>
       
-      <h3>Why Celebrate Your Anniversary at Our Rooftop?</h3>
+      <h3>Why Celebrate Your Anniversary with a Candlelight Dinner?</h3>
       <p>An anniversary deserves more than just dinner at a regular restaurant:</p>
       <ul>
-        <li><strong>Intimate Setting</strong> - Just the two of you, rekindling your romance</li>
-        <li><strong>Beautiful Decor</strong> - Romantic setup tailored to your love story</li>
-        <li><strong>Memory Making</strong> - Create new memories while celebrating old ones</li>
-        <li><strong>Special Touches</strong> - Personalized elements that show you care</li>
+        <li><strong>Intimate Candlelight Setting</strong> - Just the two of you, rekindling your romance</li>
+        <li><strong>Beautiful Candlelight Decor</strong> - Romantic candlelight setup tailored to your love story</li>
+        <li><strong>Memory Making</strong> - Create new candlelight memories while celebrating old ones</li>
+        <li><strong>Special Touches</strong> - Personalized candlelight elements that show you care</li>
       </ul>
       
-      <h3>Anniversary Celebration Ideas</h3>
-      <p>Make your anniversary extra special with these ideas:</p>
+      <h3>Anniversary Candlelight Dinner Ideas</h3>
+      <p>Make your anniversary candlelight dinner extra special with these ideas:</p>
       <ol>
         <li><strong>Photo Timeline</strong> - Display photos from each year together</li>
         <li><strong>Love Letter Reading</strong> - Write and read letters to each other</li>
@@ -305,15 +305,15 @@ function generateArticleContent(post: BlogPost): string {
       
       <h3>Romantic Date Ideas in Surat</h3>
       <ol>
-        <li><strong>Rooftop Candlelight Dinner</strong> - Dine under the stars</li>
+        <li><strong>Private Candlelight Dinner</strong> - Dine in a romantic setting</li>
         <li><strong>Sunset Viewing</strong> - Watch the sun set together</li>
         <li><strong>Music Night</strong> - Enjoy soft romantic music</li>
         <li><strong>Dessert Date</strong> - Share a special dessert platter</li>
         <li><strong>Photo Date</strong> - Capture your love story</li>
       </ol>
       
-      <h3>Making It Special at HIVY - Place for Celebrations</h3>
-      <p>Our rooftop offers the perfect setting for an unforgettable date night. With customizable setups, delicious food, and a romantic atmosphere, every visit can be a new adventure in your love story.</p>
+      <h3>Making It Special at HIVY - Candle Light Dinner in Surat</h3>
+      <p>Our candlelight dinner venue offers the perfect setting for an unforgettable date night. With customizable candlelight setups, delicious gourmet food, and a romantic candlelight atmosphere, every visit can be a new adventure in your love story.</p>
     `,
     'Pre-Wedding': `
       <h2>Capturing Pre-Wedding Magic</h2>
@@ -322,14 +322,14 @@ function generateArticleContent(post: BlogPost): string {
       <h3>Best Pre-Wedding Photoshoot Locations in Surat</h3>
       <p>Surat offers beautiful backdrops for your pre-wedding shoot:</p>
       <ul>
-        <li><strong>Rooftop Venues</strong> - Skyline views and romantic lighting</li>
+        <li><strong>Private Venues</strong> - Celebration Space views and romantic lighting</li>
         <li><strong>Lakshmi Vilas Palace</strong> - Royal and majestic backdrop</li>
         <li><strong>Sayaji Garden</strong> - Natural greenery and landscapes</li>
         <li><strong>EME Temple</strong> - Unique architectural beauty</li>
       </ul>
       
-      <h3>Why Choose Our Rooftop for Pre-Wedding Shoots?</h3>
-      <p>HIVY - Place for Celebrations offers unique advantages:</p>
+      <h3>Why Choose Our Candlelight Venue for Pre-Wedding Shoots?</h3>
+      <p>HIVY - Candle Light Dinner in Surat offers unique advantages:</p>
       <ol>
         <li>Complete privacy for comfortable poses</li>
         <li>Beautiful fairy lights and decor</li>
@@ -362,8 +362,8 @@ function generateArticleContent(post: BlogPost): string {
         <li>Coordinate gifts and registry</li>
       </ol>
       
-      <h3>Why Choose HIVY - Place for Celebrations?</h3>
-      <p>Our intimate rooftop setting is perfect for baby showers with its beautiful decor, comfortable seating, and customizable setups for this special celebration.</p>
+      <h3>Why Choose HIVY - Candle Light Dinner in Surat?</h3>
+      <p>Our intimate candlelight dinner setting is perfect for baby showers with its beautiful romantic decor, comfortable seating, and customizable setups for this special celebration.</p>
     `,
     'Baby': `
       <h2>Celebrating Precious Moments</h2>
@@ -378,7 +378,7 @@ function generateArticleContent(post: BlogPost): string {
       </ul>
       
       <h3>Planning Your Celebration</h3>
-      <p>Whether intimate with just your partner or a bigger reveal party, we can help you plan the perfect celebration at our rooftop venue.</p>
+      <p>Whether intimate with just your partner or a bigger reveal party, we can help you plan the perfect celebration at our private venue.</p>
     `,
     'Maternity': `
       <h2>Capturing the Beauty of Motherhood</h2>
@@ -396,7 +396,7 @@ function generateArticleContent(post: BlogPost): string {
       </ul>
       
       <h3>Location Tips</h3>
-      <p>Our rooftop venue offers beautiful lighting during golden hour, comfortable seating for breaks, and privacy for intimate poses.</p>
+      <p>Our private venue offers beautiful lighting during golden hour, comfortable seating for breaks, and privacy for intimate poses.</p>
     `,
     'Restaurants': `
       <h2>Surat's Culinary Gems</h2>
@@ -410,8 +410,8 @@ function generateArticleContent(post: BlogPost): string {
         <li><strong>Privacy</strong> - Comfortable for intimate conversations</li>
       </ul>
       
-      <h3>HIVY - Place for Celebrations: Beyond a Restaurant</h3>
-      <p>We're not just a restaurant – we're a celebration destination. Our rooftop offers private dining experiences with customizable setups for any occasion.</p>
+      <h3>HIVY - Candle Light Dinner in Surat: Beyond a Restaurant</h3>
+      <p>We're not just a restaurant – we're a candlelight dinner destination. Our venue offers private candlelight dining experiences with customizable setups for romantic occasions.</p>
     `,
     'Corporate': `
       <h2>Professional Gatherings Made Special</h2>
@@ -419,7 +419,7 @@ function generateArticleContent(post: BlogPost): string {
       
       <h3>Team Building Ideas</h3>
       <ul>
-        <li>Casual rooftop lunch with team activities</li>
+        <li>Casual private lunch with team activities</li>
         <li>Celebration of achievements and milestones</li>
         <li>Welcome parties for new team members</li>
         <li>Farewell gatherings for departing colleagues</li>
@@ -485,10 +485,10 @@ function generateArticleContent(post: BlogPost): string {
       <h2>Creating Picture-Perfect Moments</h2>
       <p>Whether it's a couple shoot, family photos, or special occasion photography, location matters.</p>
       
-      <h3>Why Rooftop Photoshoots Work</h3>
+      <h3>Why Private Photoshoots Work</h3>
       <ul>
         <li>Natural lighting during golden hour</li>
-        <li>City skyline backdrop</li>
+        <li>Beautiful décor backdrop</li>
         <li>Romantic fairy light ambiance for night shots</li>
         <li>Privacy for comfortable posing</li>
       </ul>
@@ -507,8 +507,8 @@ function generateArticleContent(post: BlogPost): string {
       
       <h3>New Year Celebration Ideas</h3>
       <ul>
-        <li>Intimate rooftop dinner with countdown</li>
-        <li>Couple's celebration under the stars</li>
+        <li>Intimate private dinner with countdown</li>
+        <li>Couple's celebration in a romantic setting</li>
         <li>Small group party with friends</li>
         <li>Family gathering with special dinner</li>
       </ul>
@@ -522,14 +522,14 @@ function generateArticleContent(post: BlogPost): string {
       
       <h3>Romantic Valentine's Date Ideas</h3>
       <ul>
-        <li>Candlelight dinner on the rooftop</li>
+        <li>Candlelight dinner on the private</li>
         <li>Surprise proposal setup</li>
         <li>Recreate your first date</li>
         <li>Exchange heartfelt letters</li>
       </ul>
       
-      <h3>Why Our Venue is Perfect</h3>
-      <p>With romantic lighting, private setting, and beautiful decor, HIVY - Place for Celebrations offers the perfect Valentine's Day backdrop.</p>
+      <h3>Why Our Candlelight Venue is Perfect</h3>
+      <p>With romantic candlelight, private setting, and beautiful decor, HIVY - Candle Light Dinner in Surat offers the perfect Valentine's Day candlelight dinner backdrop.</p>
     `,
     'Wedding': `
       <h2>Intimate Weddings: A Growing Trend</h2>
@@ -553,10 +553,10 @@ function generateArticleContent(post: BlogPost): string {
   
   // Add closing section
   content += `
-    <h2>Visit HIVY - Place for Celebrations</h2>
-    <p>Located at ${siteConfig.address}, HIVY - Place for Celebrations is Surat's premier rooftop celebration venue. We specialize in creating unforgettable moments for couples and families.</p>
+    <h2>Visit HIVY - Candle Light Dinner in Surat</h2>
+    <p>Located at ${siteConfig.address}, HIVY - Candle Light Dinner in Surat is Surat's premier private candlelight dinner venue. We specialize in creating unforgettable romantic candlelight dinner moments for couples.</p>
     
-    <p>Ready to plan your celebration? <strong>Call us at ${siteConfig.phone}</strong> or WhatsApp to book your special experience today.</p>
+    <p>Ready to plan your candlelight dinner? <strong>Call us at ${siteConfig.phone}</strong> or WhatsApp to book your romantic candlelight experience today.</p>
   `;
 
   return content;

@@ -11,13 +11,13 @@ import { siteConfig } from "@/lib/ffc-config";
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: `${siteConfig.name} | Premium Romantic Candle Light Dinner Experience`,
-    description: `Experience Surat's finest candle light dinner at HIVY. Private rooftop & glass house setups, gourmet dining, and romantic ambiance. Book your unforgettable candle light dinner experience. 100% private venue with 4.9★ rating.`,
+    description: `Experience Surat's finest candle light dinner at HIVY. Private & glass house setups, gourmet dining, and romantic ambiance. Book your unforgettable candle light dinner experience. 100% private venue with 4.9★ rating.`,
     keywords: [
       'candle light dinner surat',
       'candlelight dinner surat',
       'romantic dinner surat',
       'private candle light dinner',
-      'rooftop candle light dinner surat',
+      'private candle light dinner surat',
       'luxury candle light dinner',
       'candle light dinner for couples',
       'candle light dinner near me',
@@ -42,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
       'hivy candle light dinner',
       'best romantic places surat',
       'private celebration venue surat',
-      'romantic rooftop cafe surat'
+      'romantic private cafe surat'
     ],
     alternates: {
       canonical: siteConfig.website,

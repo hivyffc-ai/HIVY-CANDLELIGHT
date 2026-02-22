@@ -23,7 +23,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
 
   // Area FAQ data for schema
   const areaFaqs = [
-    { question: `How do couples from ${area.name} reach HIVY for candle light dinner?`, answer: `HIVY is conveniently located in Adajan, Surat and easily accessible from ${area.name}. You can reach us by car, auto, or cab in a short time. Search "HIVY - Place For Celebration" on Google Maps for precise directions from ${area.name}.` },
+    { question: `How do couples from ${area.name} reach HIVY for candle light dinner?`, answer: `HIVY is conveniently located in Adajan, Surat and easily accessible from ${area.name}. You can reach us by car, auto, or cab in a short time. Search "HIVY - Candle Light Dinner in Surat" on Google Maps for precise directions from ${area.name}.` },
     { question: "What is included in the candle light dinner package?", answer: "Our candle light dinner packages include premium decoration with candles, rose petals, fairy lights, a multi-course gourmet meal, welcome drinks, soft background music, complimentary cake, and a completely private setup exclusively for you and your partner." },
     { question: `What are the booking options for couples from ${area.name}?`, answer: `Couples from ${area.name} can book their candle light dinner via WhatsApp at ${siteConfig.phone}, phone call, or our online booking form. We recommend booking 2-3 days in advance, especially for weekends and holidays.` },
     { question: "Is the candle light dinner venue completely private?", answer: "Yes! Your candle light dinner at HIVY is 100% private. The entire venue is reserved exclusively for you and your partner during your 3-hour booking slot." },
@@ -97,7 +97,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
                 Candle Light Dinner in {area.name}
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8 max-w-xl">
-                HIVY brings premium romantic candle light dinner experiences to couples in {area.name}, Surat. Private rooftop & glass house setups with gourmet dining!
+                HIVY brings premium romantic candle light dinner experiences to couples in {area.name}, Surat. Private & glass house setups with gourmet dining!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -126,14 +126,9 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
               </div>
             </div>
             
-            {/* Hero Visual */}
-            <div className="hidden lg:flex justify-center">
-              <div className="w-72 h-72 rounded-full bg-white/10 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-16 w-16 mx-auto mb-2" />
-                  <span className="text-2xl font-serif">{area.name}</span>
-                </div>
-              </div>
+            {/* Hero Booking Form */}
+            <div className="hidden lg:block">
+              <FFCBookingForm variant="hero" pageTitle={`Candle Light Dinner near ${area.name}`} />
             </div>
           </div>
         </div>
@@ -194,7 +189,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
                 </p>
 
                 <p className="text-gray-600 mb-6">
-                  Our venue features stunning rooftop setups and elegant glass houses that provide the perfect ambiance for your romantic candle light dinner. Enjoy gourmet cuisine, soft music, and premium decorations in a completely private setting.
+                  Our venue features stunning private setups and elegant glass houses that provide the perfect ambiance for your romantic candle light dinner. Enjoy gourmet cuisine, soft music, and premium decorations in a completely private setting.
                 </p>
 
                 <div className="bg-white rounded-xl p-6 mb-8">
@@ -204,7 +199,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
                   </h3>
                   <div className="grid md:grid-cols-2 gap-3">
                     {[
-                      "Private Rooftop Candlelight Setup",
+                      "Private Candlelight Setup",
                       "Elegant Glass House Dining",
                       "Gourmet Multi-Course Meals",
                       "Premium Decoration & Ambiance",
@@ -236,7 +231,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-rose-900 font-bold">•</span>
-                    <span><strong>6 Unique Setups:</strong> Choose from rooftop and glass house candle light dinner experiences.</span>
+                    <span><strong>6 Unique Setups:</strong> Choose from private and glass house candle light dinner experiences.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-rose-900 font-bold">•</span>

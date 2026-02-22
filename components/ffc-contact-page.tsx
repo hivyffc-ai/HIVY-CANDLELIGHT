@@ -26,7 +26,7 @@ export default function FFCContactPage() {
             Contact Us
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            We'd love to hear from you! Book your celebration or ask us anything.
+            We'd love to hear from you! Book your candlelight dinner or ask us anything.
           </p>
         </div>
       </section>
@@ -144,7 +144,7 @@ export default function FFCContactPage() {
                             <p>4 PM - 7 PM | 5 PM - 8 PM | 6 PM - 9 PM</p>
                           </div>
                           <div>
-                            <p className="font-semibold text-rose-950 mb-1">🌙 Dinner (Indoor/Rooftop)</p>
+                            <p className="font-semibold text-rose-950 mb-1">🌙 Dinner (Indoor/Private)</p>
                             <p>7 PM - 10 PM | 7:30 PM - 10:30 PM | 8 PM - 11 PM</p>
                           </div>
                         </div>
@@ -178,10 +178,68 @@ export default function FFCContactPage() {
             {/* Booking Form */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-8 font-serif">
-                Book Your Celebration
+                Book Your Candlelight Dinner
               </h2>
               <FFCBookingForm pageTitle="Contact Page" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Info SEO Section */}
+      <section className="py-16 bg-amber-50/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-8">Reserve Your Candlelight Experience</h2>
+          <div className="prose prose-lg prose-amber max-w-none text-gray-700">
+            <h3 className="text-xl font-bold text-amber-900 mt-6">Booking Your Romantic Candlelight Dinner</h3>
+            <p>
+              A candlelight dinner at HIVY is more than just a meal — it is an experience designed to create intimacy, romance, and unforgettable memories. Booking this experience begins with a simple conversation with our team. Whether you are planning a surprise date for your partner, celebrating a special occasion, or simply wanting to spend quality time together in a magical setting, we are here to bring your romantic vision to life. Our candlelight dinner packages include everything from the elegant table setup with real candles and rose petals to a multi-course gourmet meal served in complete privacy.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Preferred Contact Methods for Reservations</h3>
+            <p>
+              We recommend WhatsApp as the fastest way to reserve your candlelight dinner. Send us a message with your preferred date and time, and our reservation team will respond within minutes with availability and package options. If you prefer speaking directly, call our booking number and a coordinator will walk you through the entire reservation process, answer your questions about menu options, and help you select the perfect package for your romantic evening. For detailed inquiries or corporate bookings, email communication is also available.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Best Times to Book Candlelight Dinners</h3>
+            <p>
+              Candlelight dinners are most magical during the evening and dinner hours when the natural light fades and the warm glow of candles fills your private space. Our most popular slots are the evening sessions from 6 PM to 9 PM and dinner sessions from 7 PM to 10 PM. These timings allow couples to arrive as twilight sets in and experience the full transformation of the venue into a romantic haven. For advance planning, we recommend booking at least three to five days ahead for weekday slots and seven to ten days for weekends. Special occasions like Valentine's Day, anniversaries, and proposal nights should be booked at least two weeks in advance.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">What to Discuss During Your Inquiry</h3>
+            <p>
+              When you reach out to book your candlelight dinner, sharing certain details helps us create the perfect evening for you. Let us know the occasion you are celebrating, whether it is an anniversary, birthday, proposal, or simply a romantic date night. Share your preferred date and time slot, the theme or ambiance you envision, and any specific requests you might have. If you are planning a surprise, tell us how you want the reveal to unfold. Our team takes every detail into account to ensure your evening is exactly as you imagined or even better.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Menu and Dietary Preference Communication</h3>
+            <p>
+              Your candlelight dinner includes a carefully curated multi-course meal designed for romance. When booking, let us know about any dietary preferences or restrictions, including vegetarian requirements, allergies, or specific cuisine preferences. We can customize your menu to include dishes you both love and exclude anything you prefer to avoid. Couples often request specific dishes or ask for recommendations, and our culinary team is happy to accommodate special requests when communicated during the booking process. The goal is to ensure every bite of your dinner is as delightful as the ambiance surrounding you.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Romantic Timing Slot Recommendations</h3>
+            <p>
+              For the most romantic candlelight experience, we recommend the 7 PM to 10 PM dinner slot. This timing allows you to arrive as the evening darkens, witness the hundreds of candles being lit, and enjoy your dinner in the warm, intimate glow that only real candlelight provides. The 8 PM to 11 PM slot is perfect for those who prefer a later dinner or want to extend their romantic evening into the night. For special occasions like proposals, we can coordinate the exact moment when you want to pop the question so that everything is perfectly timed.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Our Location in Surat — Dumas Road Area</h3>
+            <p>
+              HIVY is situated in the heart of Surat's most scenic area, near VR Mall on Dumas Road in Adajan. This location offers easy accessibility from all major neighborhoods including Vesu, City Light, Althan, Pal, Athwa, and beyond. The drive from most areas of Surat takes between 15 to 30 minutes. Our venue provides ample free parking for both cars and two-wheelers, so you can arrive relaxed and ready to enjoy your romantic evening. The exact address and Google Maps location are shared after you confirm your booking.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Confirmation and Preparation Process</h3>
+            <p>
+              Once you finalize your candlelight dinner booking with a small advance payment, our team begins preparing for your special evening. You will receive a confirmation message with all the details including your date, time slot, package name, and any special requests noted. On the day of your dinner, your private setup begins hours before your arrival. Our decoration team arranges every candle, every rose petal, every fairy light to create the perfect romantic atmosphere. By the time you walk in, your private dining space is transformed into a magical candlelit haven waiting just for you.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Helping You Plan the Perfect Evening</h3>
+            <p>
+              Our commitment goes beyond just providing a venue — we actively help you plan every aspect of your romantic evening. If you are unsure which package to choose, our team offers honest recommendations based on your occasion and budget. If you want to include special elements like musicians, photographers, custom decorations, or surprise reveals, we coordinate everything. We have helped hundreds of couples create their perfect romantic evenings, and our experience means we can anticipate what makes these moments truly special.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Customer Testimonial Highlights</h3>
+            <p>
+              Couples who have experienced candlelight dinners at HIVY consistently share their appreciation for our attention to detail and romantic ambiance. Many describe the experience as exceeding their expectations, with the real candlelight, the beautiful decorations, and the complete privacy creating an atmosphere they could not have imagined. Partners who planned surprises tell us how our coordination made their special moments flawless. These testimonials inspire us to maintain the highest standards and continue creating romantic experiences that become cherished memories for every couple who walks through our doors.
+            </p>
           </div>
         </div>
       </section>
@@ -191,7 +249,7 @@ export default function FFCContactPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold font-serif">Find Us</h2>
-            <p className="text-gray-600 mt-2">Visit HIVY - Place for Celebrations in Surat</p>
+            <p className="text-gray-600 mt-2">Visit HIVY - Candle Light Dinner in Surat</p>
           </div>
           <div className="max-w-5xl mx-auto">
             <div className="rounded-xl overflow-hidden shadow-lg">
@@ -204,7 +262,7 @@ export default function FFCContactPage() {
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full"
-                title="HIVY - Place for Celebrations Location"
+                title="HIVY - Candle Light Dinner in Surat Location"
               />
             </div>
             <div className="text-center mt-6">

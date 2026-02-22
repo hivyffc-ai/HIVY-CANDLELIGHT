@@ -11,14 +11,14 @@ export const candleLightServiceCategories: ServiceCategory[] = [
     emoji: "🕯️",
     description: "Experience the most romantic candle light dinner in Surat with premium private dining, stunning decorations, and unforgettable couple moments at HIVY.",
     metaTitle: "Candle Light Dinner in Surat | HIVY - Best Romantic Dining Venue",
-    metaDescription: "Book the best candle light dinner in Surat at HIVY. Private rooftop dining, romantic ambiance, gourmet food, and magical couple experiences. Call now!",
+    metaDescription: "Book the best candle light dinner in Surat at HIVY. Private dining, romantic ambiance, gourmet food, and magical couple experiences. Call now!",
     keywords: [
       { 
         slug: "candle-light-dinner-in-surat", 
         title: "Candle Light Dinner in Surat", 
         h1: "Best Candle Light Dinner in Surat", 
         metaTitle: "Candle Light Dinner in Surat | #1 Romantic Dining Experience 2026", 
-        metaDescription: "Experience the best candle light dinner in Surat at HIVY. Private rooftop venue, romantic decorations, gourmet food & unforgettable moments for couples. Book now!" 
+        metaDescription: "Experience the best candle light dinner in Surat at HIVY. Private venue, romantic decorations, gourmet food & unforgettable moments for couples. Book now!" 
       },
       { 
         slug: "romantic-candle-light-dinner-surat", 
@@ -35,11 +35,11 @@ export const candleLightServiceCategories: ServiceCategory[] = [
         metaDescription: "Book a 100% private candle light dinner in Surat. HIVY offers exclusive couples-only dining with complete privacy, romantic setup & personalized service." 
       },
       { 
-        slug: "rooftop-candle-light-dinner-surat", 
-        title: "Rooftop Candle Light Dinner Surat", 
-        h1: "Rooftop Candle Light Dinner in Surat", 
-        metaTitle: "Rooftop Candle Light Dinner Surat | Sky-High Romance Under Stars", 
-        metaDescription: "Enjoy a stunning rooftop candle light dinner in Surat with panoramic city views. HIVY's open-air romantic dining experience under the stars for couples." 
+        slug: "private-candle-light-dinner-surat", 
+        title: "Private Candle Light Dinner Surat", 
+        h1: "Private Candle Light Dinner in Surat", 
+        metaTitle: "Private Candle Light Dinner Surat | Intimate Romance With Candles", 
+        metaDescription: "Enjoy a stunning private candle light dinner in Surat with beautiful romantic ambiance. HIVY's open-air romantic dining experience in a romantic setting for couples." 
       },
       { 
         slug: "luxury-candle-light-dinner-surat", 
@@ -102,7 +102,7 @@ export const candleLightServiceCategories: ServiceCategory[] = [
         title: "Best Candle Light Dinner Places", 
         h1: "Best Candle Light Dinner Places in Surat", 
         metaTitle: "Best Candle Light Dinner Places in Surat 2026 | Top Spots", 
-        metaDescription: "Discover the best candle light dinner places in Surat. HIVY ranks #1 for romantic private dining with rooftop views and exclusive couple experiences." 
+        metaDescription: "Discover the best candle light dinner places in Surat. HIVY ranks #1 for romantic private dining with private views and exclusive couple experiences." 
       },
       { 
         slug: "affordable-candle-light-dinner-surat", 
@@ -116,7 +116,7 @@ export const candleLightServiceCategories: ServiceCategory[] = [
         title: "Premium Candle Light Dinner Experience", 
         h1: "Premium Candle Light Dinner Experience in Surat", 
         metaTitle: "Premium Candle Light Dinner Experience Surat | Luxury Dining", 
-        metaDescription: "Experience premium candle light dinner in Surat with luxury setup, real rose petals, champagne & gourmet multi-course dining at HIVY's rooftop venue." 
+        metaDescription: "Experience premium candle light dinner in Surat with luxury setup, real rose petals, champagne & gourmet multi-course dining at HIVY's private venue." 
       },
       { 
         slug: "candle-light-dinner-with-music-surat", 
@@ -151,7 +151,7 @@ export const candleLightServiceCategories: ServiceCategory[] = [
         title: "Outdoor Candle Light Dinner Surat", 
         h1: "Outdoor Candle Light Dinner in Surat", 
         metaTitle: "Outdoor Candle Light Dinner Surat | Open-Air Romance", 
-        metaDescription: "Experience magical outdoor candle light dinner in Surat at HIVY's open rooftop. Dine under the stars with city views and romantic ambiance." 
+        metaDescription: "Experience magical outdoor candle light dinner in Surat at HIVY's open private. Dine in a romantic setting with romantic ambiance and romantic ambiance." 
       }
     ]
   }

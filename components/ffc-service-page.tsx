@@ -20,8 +20,70 @@ export default function FFCServicePage({ service }: ServicePageProps) {
   // Get related packages
   const relatedPackages = getVisiblePackages().slice(0, 4);
 
+  // Service FAQ data for schema
+  const serviceFaqs = [
+    {
+      question: `How can I book a ${service.name.toLowerCase()} candlelight dinner at HIVY?`,
+      answer: `Booking your candlelight dinner is easy! Call us at ${siteConfig.phone}, WhatsApp us, or fill out our online form. We recommend booking 2-3 days in advance for your romantic candlelight experience.`
+    },
+    {
+      question: `What is included in the ${service.name.toLowerCase()} candlelight dinner package?`,
+      answer: "Our candlelight dinner packages include 3 hours of private romantic dining, welcome drink, gourmet multi-course meal, stunning candlelight decorations, comfortable seating, and soft romantic music."
+    },
+    {
+      question: "Is the candlelight dinner venue completely private?",
+      answer: "Yes! Our candlelight dinner venue is exclusively for couples. You'll have complete privacy during your romantic candlelight evening with no other guests present."
+    },
+    {
+      question: "Can I customize my candlelight dinner decorations?",
+      answer: "Absolutely! We love creating personalized candlelight experiences. Share your ideas and preferences for your romantic candlelight dinner, and we'll make them happen."
+    },
+    {
+      question: `What are the prices for ${service.name.toLowerCase()} candlelight dinner packages?`,
+      answer: "Our candlelight dinner packages start from ₹5,100 and go up to ₹6,500. Each package includes venue access, romantic decorations, gourmet food, music, cake, and dedicated service with no hidden costs."
+    },
+    {
+      question: "What time slots are available for candlelight dinners?",
+      answer: "We offer flexible 3-hour time slots: Lunch (12-3 PM), Afternoon (1-4 PM, 2-5 PM), Evening (4-7 PM, 5-8 PM, 6-9 PM), and Dinner (7-10 PM, 7:30-10:30 PM, 8-11 PM). Evening and dinner slots are most popular for candlelight experiences."
+    },
+    {
+      question: "Can I plan a surprise candlelight dinner for my partner?",
+      answer: "Absolutely! Surprise candlelight dinners are our specialty. Our team helps coordinate timing, setup, and keeping the secret until the big reveal. We've successfully planned over 500 surprise romantic dinners."
+    },
+    {
+      question: "What food is served during the candlelight dinner?",
+      answer: "Our gourmet menu includes welcome drinks, cheese fondue with cheese balls, wedges & nachos, signature mocktails, delicious main course items, and dessert with chocolate brownie. All vegetarian. Jain options available on request."
+    },
+    {
+      question: "Is parking available at the candlelight dinner venue?",
+      answer: "Yes, ample free parking is available on-site for both two-wheelers and four-wheelers. You can drive directly to our venue without any parking worries."
+    },
+    {
+      question: "What is the cancellation and rescheduling policy?",
+      answer: "We offer free rescheduling up to 48 hours before your slot. Cancellations made 48+ hours in advance receive a refund minus processing fees. We're flexible and understanding with our couples."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
+      {/* FAQ Schema JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": serviceFaqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })
+        }}
+      />
       <FFCHeader />
       
       {/* Breadcrumb */}
@@ -81,13 +143,18 @@ export default function FFCServicePage({ service }: ServicePageProps) {
               </div>
             </div>
             
-            {/* Hero Visual */}
-            <div className="hidden lg:flex justify-center">
-              <div className="w-80 h-80 rounded-full bg-white/10 flex items-center justify-center">
-                <span className="text-[8rem]">{service.emoji}</span>
-              </div>
+            {/* Hero Booking Form */}
+            <div className="hidden lg:block">
+              <FFCBookingForm variant="hero" pageTitle={`${service.name} Service Page`} />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Mobile Booking Form */}
+      <section className="lg:hidden bg-amber-50 py-8">
+        <div className="container mx-auto px-4">
+          <FFCBookingForm pageTitle={`${service.name} Service Page`} />
         </div>
       </section>
 
@@ -96,16 +163,16 @@ export default function FFCServicePage({ service }: ServicePageProps) {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 font-serif">
-              Why Choose HIVY - Place for Celebrations for {service.name}?
+              Why Choose HIVY - Candle Light Dinner in Surat for {service.name}?
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { emoji: "🔒", title: "100% Private", desc: "Exclusive booking for couples" },
-              { emoji: "🌙", title: "Stunning Setup", desc: "Rooftop & glass house options" },
-              { emoji: "🍽️", title: "Delicious Food", desc: "Curated café-style menu" },
-              { emoji: "📸", title: "Photo-Ready", desc: "Instagram-worthy décor" },
+              { emoji: "🔒", title: "100% Private", desc: "Exclusive candlelight booking for couples" },
+              { emoji: "🌙", title: "Stunning Candlelight Setup", desc: "Private candlelight & glass house options" },
+              { emoji: "🍽️", title: "Gourmet Dining", desc: "Curated candlelight dinner menu" },
+              { emoji: "📸", title: "Photo-Ready", desc: "Instagram-worthy candlelight décor" },
             ].map((item, index) => (
               <Card key={index} className="border-stone-200 text-center">
                 <CardContent className="p-6">
@@ -124,9 +191,9 @@ export default function FFCServicePage({ service }: ServicePageProps) {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 font-serif">
-              {service.name} Packages
+              {service.name} Candlelight Dinner Packages
             </h2>
-            <p className="text-gray-600">Choose from our romantic celebration packages</p>
+            <p className="text-gray-600">Choose from our romantic candlelight dinner packages</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -232,10 +299,10 @@ export default function FFCServicePage({ service }: ServicePageProps) {
           <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div>
               <h2 className="text-3xl font-bold mb-6 font-serif">
-                Book Your {service.name}
+                Book Your {service.name} Candlelight Dinner
               </h2>
               <p className="text-gray-600 mb-6">
-                Ready to create unforgettable memories? Fill out the form and our team will contact you shortly.
+                Ready to create unforgettable candlelight dinner memories? Fill out the form and our team will contact you shortly.
               </p>
               
               <div className="space-y-4">
@@ -266,29 +333,12 @@ export default function FFCServicePage({ service }: ServicePageProps) {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 font-serif">
-              {service.name} FAQs
+              {service.name} Candlelight Dinner FAQs
             </h2>
           </div>
           
           <Accordion type="single" collapsible className="space-y-4">
-            {[
-              {
-                question: `How can I book a ${service.name.toLowerCase()} at HIVY - Place for Celebrations?`,
-                answer: `Booking is easy! Call us at ${siteConfig.phone}, WhatsApp us, or fill out our online form. We recommend booking 2-3 days in advance.`
-              },
-              {
-                question: `What is included in the ${service.name.toLowerCase()} package?`,
-                answer: "Our packages include 3 hours of private celebration, welcome drink, celebration cake, romantic decorations, comfortable seating, and soft music."
-              },
-              {
-                question: "Is the venue completely private?",
-                answer: "Yes! Our venue is exclusively for couples. You'll have complete privacy during your celebration with no other guests present."
-              },
-              {
-                question: "Can I customize the decorations?",
-                answer: "Absolutely! We love creating personalized experiences. Share your ideas and preferences, and we'll make them happen."
-              }
-            ].map((faq, index) => (
+            {serviceFaqs.map((faq, index) => (
               <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg border border-stone-200 px-6">
                 <AccordionTrigger className="text-left font-medium hover:no-underline">
                   {faq.question}

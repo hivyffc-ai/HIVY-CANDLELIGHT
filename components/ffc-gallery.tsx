@@ -19,8 +19,8 @@ export interface GalleryItem {
 // SEO-friendly gallery items with keyword-rich names — mapped to real images & videos
 export const galleryItems: GalleryItem[] = [
   // Featured Images
-  { type: 'image', src: '/images/gallery/rooftop-romantic-setup-surat-1.jpg', alt: 'Romantic rooftop candle light dinner setup in Surat', title: 'Romantic Rooftop', subtitle: 'Premium Package', featured: true },
-  { type: 'image', src: '/images/gallery/romantic-rooftop-candlelight-dinner-surat-1.jpg', alt: 'Candle light dinner at HIVY Surat', title: 'Candlelight Dinner', featured: false },
+  { type: 'image', src: '/images/gallery/private-romantic-setup-surat-1.jpg', alt: 'Romantic private candle light dinner setup in Surat', title: 'Romantic Private', subtitle: 'Premium Package', featured: true },
+  { type: 'image', src: '/images/gallery/romantic-private-candlelight-dinner-surat-1.jpg', alt: 'Candle light dinner at HIVY Surat', title: 'Candlelight Dinner', featured: false },
   { type: 'image', src: '/images/gallery/candlelight-dinner-setup-surat-1.jpg', alt: 'Romantic dinner setup at HIVY Surat', title: 'Evening Romance', featured: false },
   { type: 'video', src: '/videos/birthday-celebration-video-surat-1.mp4', alt: 'Birthday celebration video at HIVY Surat', title: 'Birthday Celebration', featured: false },
   { type: 'image', src: '/images/gallery/birthday-surprise-decoration-surat-1.jpg', alt: 'Birthday surprise decoration at HIVY Surat', title: 'Birthday Surprise', featured: false },
@@ -29,7 +29,7 @@ export const galleryItems: GalleryItem[] = [
   { type: 'image', src: '/images/gallery/romantic-table-decoration-surat-1.jpg', alt: 'Romantic table decoration at HIVY Surat', title: 'Table Decor', featured: false },
   { type: 'image', src: '/images/gallery/birthday-balloon-decoration-surat-1.jpg', alt: 'Birthday balloon decoration at HIVY Surat', title: 'Balloon Decoration', featured: false },
   { type: 'image', src: '/images/gallery/anniversary-dinner-setup-surat-1.jpg', alt: 'Anniversary dinner setup at HIVY Surat', title: 'Anniversary Dinner', featured: false },
-  { type: 'video', src: '/videos/rooftop-celebration-reel-surat-1.mp4', alt: 'Rooftop celebration reel at HIVY Surat', title: 'Rooftop Vibes', featured: false },
+  { type: 'video', src: '/videos/private-celebration-reel-surat-1.mp4', alt: 'Private celebration reel at HIVY Surat', title: 'Private Vibes', featured: false },
   { type: 'image', src: '/images/gallery/romantic-ambiance-cafe-surat-1.jpg', alt: 'Romantic ambiance at HIVY cafe Surat', title: 'Romantic Ambiance', featured: false },
   { type: 'image', src: '/images/gallery/couple-celebration-surat-1.jpg', alt: 'Couple celebration at HIVY Surat', title: 'Couple Moment', featured: false },
   { type: 'image', src: '/images/gallery/evening-romantic-celebration-surat-1.jpg', alt: 'Evening romantic celebration at HIVY Surat', title: 'Evening Magic', featured: false },
@@ -53,7 +53,7 @@ export const galleryItems: GalleryItem[] = [
   { type: 'image', src: '/images/gallery/baby-shower-decoration-surat-1.jpg', alt: 'Baby shower decoration at HIVY Surat', title: 'Baby Shower', featured: false },
   { type: 'image', src: '/images/gallery/baby-moments-celebration-surat-1.jpg', alt: 'Baby moments celebration at HIVY Surat', title: 'Baby Moments', featured: false },
   { type: 'image', src: '/images/gallery/candlelight-dinner-for-couples-surat-1.jpg', alt: 'Candlelight dinner for couples at HIVY Surat', title: 'Couple Dinner', featured: false },
-  { type: 'image', src: '/images/gallery/rooftop-dinner-surat-1.jpg', alt: 'Rooftop dinner at HIVY Surat', title: 'Rooftop Dinner', featured: false },
+  { type: 'image', src: '/images/gallery/private-dinner-surat-1.jpg', alt: 'Private dinner at HIVY Surat', title: 'Private Dinner', featured: false },
   { type: 'image', src: '/images/gallery/private-dining-surat-1.jpg', alt: 'Private dining at HIVY Surat', title: 'Private Dining', featured: false },
   { type: 'image', src: '/images/gallery/romantic-venue-surat-1.jpg', alt: 'Romantic venue at HIVY Surat', title: 'Romantic Venue', featured: false },
   { type: 'image', src: '/images/gallery/celebration-venue-surat-1.jpg', alt: 'Celebration venue at HIVY Surat', title: 'Celebration Venue', featured: false },
@@ -68,8 +68,8 @@ interface FFCGalleryProps {
 }
 
 export function FFCGallery({ 
-  title = "Our Gallery", 
-  subtitle = "Real celebrations, real memories",
+  title = "Candlelight Dinner Gallery", 
+  subtitle = "Real candlelight dinners, real romantic memories",
   maxItems = 12,
   showFilters = true,
   className = ""
@@ -99,7 +99,7 @@ export function FFCGallery({
             {subtitle}
           </h2>
           <p className="text-gray-600">
-            Browse our collection of romantic celebrations in Surat
+            Browse our collection of romantic candlelight dinners in Surat
           </p>
         </div>
 

@@ -26,10 +26,10 @@ export default function FFCPackagesPage() {
             <Gift className="h-4 w-4 mr-2" /> 5 Unique Setups
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
-            Our Packages
+            Candlelight Dinner Packages
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Choose from 5 stunning romantic setups designed to make your celebration unforgettable
+            Choose from 5 stunning romantic candlelight setups designed to make your dinner unforgettable
           </p>
           <div className="mt-6">
             <FFCBookNowButton pageTitle="Packages Page" className="text-lg px-8 py-6" />
@@ -58,7 +58,7 @@ export default function FFCPackagesPage() {
                   </div>
                   
                   {/* Content */}
-                  <CardContent className="p-3 md:p-4">
+                  <CardContent className="p-2.5 sm:p-3 md:p-4">
                     <h2 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-1 group-hover:text-rose-900 transition-colors leading-tight">
                       {pkg.name} {pkg.emoji}
                     </h2>
@@ -70,6 +70,12 @@ export default function FFCPackagesPage() {
                     <p className="text-base sm:text-lg md:text-xl font-bold text-rose-900">
                       {formatPrice(pkg.price)}
                     </p>
+                    {/* View Details */}
+                    <div className="flex justify-end mt-2">
+                      <span className="text-[10px] sm:text-xs text-amber-700 font-medium flex items-center gap-1 hover:text-amber-900">
+                        View Details <ChevronRight className="h-3 w-3" />
+                      </span>
+                    </div>
                   </CardContent>
                 </Card>
               </Link>
@@ -82,20 +88,20 @@ export default function FFCPackagesPage() {
       <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 font-serif">What's Included in Every Package</h2>
-            <p className="text-gray-600">All our packages come with these essential elements</p>
+            <h2 className="text-3xl font-bold mb-4 font-serif">What's Included in Every Candlelight Dinner Package</h2>
+            <p className="text-gray-600">All our candlelight dinner packages come with these essential elements</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: "🕐", title: "3 Hours Private Time", desc: "Exclusive private celebration" },
+              { icon: "🕐", title: "3 Hours Private Time", desc: "Exclusive private candlelight dinner" },
               { icon: "🥂", title: "Welcome Drink", desc: "Refreshing start to your evening" },
-              { icon: "🍰", title: "Celebration Cake", desc: "Complimentary cake included" },
+              { icon: "🍰", title: "Gourmet Dessert", desc: "Complimentary dessert included" },
               { icon: "🎶", title: "Romantic Music", desc: "Soft melodies throughout" },
-              { icon: "🕯️", title: "Candle Setup", desc: "Warm candlelight ambiance" },
-              { icon: "🎈", title: "Decorations", desc: "Beautiful thematic decor" },
+              { icon: "🕯️", title: "Premium Candle Setup", desc: "Warm candlelight ambiance" },
+              { icon: "🎈", title: "Romantic Decorations", desc: "Beautiful candlelight thematic decor" },
               { icon: "🛋️", title: "Comfortable Seating", desc: "Cozy seating arrangements" },
-              { icon: "📸", title: "Photo-Ready Setup", desc: "Instagram-worthy backdrops" },
+              { icon: "📸", title: "Photo-Ready Setup", desc: "Instagram-worthy candlelight backdrops" },
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-lg p-6 text-center shadow-sm">
                 <span className="text-4xl mb-3 block">{item.icon}</span>
@@ -108,40 +114,58 @@ export default function FFCPackagesPage() {
       </section>
 
       {/* SEO Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-amber-50/30">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-              Choosing the Perfect Candle Light Dinner Package in Surat
-            </h2>
-          </div>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+          <h2 className="text-3xl font-bold text-center mb-8 font-serif">Candlelight Dinner Package Experience Guide</h2>
+          <div className="prose prose-lg prose-amber max-w-none text-gray-700">
+            <h3 className="text-xl font-bold text-amber-900 mt-6">The Magic of Candlelight Dining in Private Settings</h3>
             <p>
-              Selecting the right candle light dinner package at HIVY depends on the occasion you are celebrating, the ambiance you prefer, and the experience you want to create for your partner. Each of our five packages has been thoughtfully designed with a unique aesthetic, mood, and set of inclusions to ensure every celebration feels truly special and one-of-a-kind.
+              There's something transformative about dining by candlelight in a completely private space. The gentle flicker of flames creates an intimate atmosphere impossible to replicate in busy restaurants. At HIVY, our candlelight dinner packages harness this magic through carefully orchestrated lighting that highlights romantic moments while softening the environment into a cocoon of warmth. Unlike public restaurants where fluorescent lights or harsh overheads break the spell, our private candlelight dinners immerse you in genuine romantic ambiance from the moment you walk in until your celebration concludes. The dancing shadows, the warm glow on your partner's face, and the complete absence of distractions create conditions where connection deepens naturally.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">Swing of LOVE — ₹5,100</h3>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">How Candlelight Ambiance Enhances Each Package</h3>
             <p>
-              Our Swing of LOVE package is perfect for couples looking for a dreamy, whimsical candle light dinner experience. Featuring a beautifully decorated swing seating area surrounded by fairy lights, candles, and rose petals, this setup is ideal for date nights, small birthday celebrations, and simply spending quality time with your partner in a magical setting. The package includes 3 hours of private time, welcome drinks, a multi-course gourmet meal, celebration cake, and romantic background music.
+              Every HIVY package incorporates candlelight as a central design element, though each interpretation differs beautifully. Tent of Romance features candles at multiple heights within the canopy, creating layered lighting that feels luxuriously dramatic. Fairy Tale Proposals uses candle aisles and pathways that guide your partner toward the proposal moment with increasing anticipation. BoHo Chic scatters candles among natural textures and macramé for earthy romantic warmth. Swing of LOVE positions candles to illuminate the decorated swing centerpiece while casting romantic shadows throughout the space. Elite Group Setup distributes candlelight across expanded seating areas so every guest experiences the warm ambiance. Each approach demonstrates how versatile candlelight becomes when thoughtfully designed.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">BoHo Chic — ₹5,700</h3>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Perfect Candlelight Package for Date Nights</h3>
             <p>
-              For couples who love a rustic, bohemian aesthetic, the BoHo Chic package delivers an earthy yet elegant candle light dinner experience. With macramé accents, warm-toned fairy lights, natural textures, and an abundance of candles, this setup creates a cozy and intimate atmosphere. It is a wonderful choice for anniversary celebrations, milestone date nights, and couples who appreciate artful, Instagram-worthy décor.
+              Regular date nights often default to restaurant reservations—pleasant but predictable. HIVY candlelight packages transform date night into an event worth anticipating. Swing of LOVE at ₹5,100 offers excellent value for couples seeking memorable date night experiences without special occasions. The playful swing setting surrounded by candlelight creates unique photo opportunities while the private venue ensures your conversations remain intimate. BoHo Chic at ₹5,700 elevates date night into an Instagram-worthy experience with its bohemian-chic aesthetic bathed in warm candlelight. Couples frequently book these packages for monthly anniversaries, "just because" celebrations, or whenever routine dinner dates feel insufficient for expressing love.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">Fairy Tale Proposals — ₹6,300</h3>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">The Multi-Course Dining Experience Explained</h3>
             <p>
-              Planning to pop the question? The Fairy Tale Proposals package is designed specifically for that life-changing moment. With a grand archway of lights, cascading flower arrangements, an aisle of candles and rose petals, and a dramatic reveal setup, this package transforms your proposal into a scene from a fairy tale. Our team coordinates every detail discreetly, ensuring the surprise is flawless and your partner says yes in the most magical setting imaginable.
+              Candlelight dining at HIVY isn't merely about atmosphere—the culinary journey matters equally. Each package includes a thoughtfully composed multi-course meal designed to complement the romantic setting. Your evening begins with welcome drinks served as you absorb the decorated space's beauty. Appetizers follow, ranging from Indian favorites to Continental selections based on your preferences indicated during booking. Main courses arrive when you're ready, not on restaurant schedules, allowing natural conversation flow. The meal concludes with dessert alongside your celebration cake if included. Throughout, servers appear discreetly when needed and disappear when privacy matters more. This attentive yet unobtrusive service style ensures dining enhances rather than interrupts your candlelight experience.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">Tent of Romance — ₹6,500</h3>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Romantic Atmosphere Elements Beyond Candles</h3>
             <p>
-              Our most luxurious offering, the Tent of Romance envelops you in an intimate tent canopy adorned with draped fabrics, twinkling fairy lights, rose petals, premium candle arrangements, and lush décor. This package is ideal for grand anniversary celebrations, honeymoon dinners, or when you want to give your partner the ultimate romantic experience. Every element is premium — from the setup materials to the gourmet multi-course meal.
+              While candlelight anchors the atmosphere, numerous supporting elements complete the romantic experience. Rose petals scatter across tables and pathways, their subtle fragrance adding sensory depth. Fairy lights twinkle alongside candle flames, creating dimensioned lighting that feels magical rather than simply dim. Soft romantic music plays throughout your three-hour celebration without overwhelming conversation. Comfortable seating arrangements encourage couples to sit close, whether on decorated swings, plush floor cushions, or elegantly dressed dining chairs. Each package combines these elements differently, but all achieve the same goal: transporting you from ordinary Surat evenings into genuinely romantic experiences.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">The Elite Group Setup — ₹5,400</h3>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Why Candlelight Dinners Outshine Restaurant Dates</h3>
             <p>
-              Celebrating with friends or family? The Elite Group Setup accommodates small groups while maintaining the romantic ambiance HIVY is known for. Perfect for double dates, engagement parties, small birthday gatherings, or friend-group celebrations, this package combines our signature candle-lit atmosphere with comfortable group seating and generous food portions.
+              Restaurant candlelight dinners, however pleasant, suffer unavoidable limitations. The table next to yours might host a noisy family celebration. Your waiter might interrupt meaningful conversation moments. The decorations weren't arranged for you—they're permanent fixtures seen by hundreds before. Background noise from kitchens, other diners, and staff creates ambient stress you might not consciously notice but certainly feel. HIVY candlelight dinners eliminate every limitation. Your decorations were set up fresh today, specifically for your celebration. No other guests exist in your space. Staff appears only when summoned. Background music plays at your preferred volume. The entire venue exists for your three hours, creating genuine exclusivity that restaurants cannot replicate regardless of pricing.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">How to Book Your Package</h3>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Creating Memorable Candlelight Experiences Together</h3>
             <p>
-              Ready to book? Simply choose your preferred package, select a date and time slot, and reach out to us via WhatsApp or phone. Our team will confirm availability, arrange your setup, and ensure every detail is perfect for your special evening. Weekend and holiday slots are in high demand, so we recommend booking 2-3 days in advance to secure your preferred date.
+              The most memorable candlelight dinners become meaningful through personalization. Beyond choosing your preferred package, consider additions that reference your relationship's unique story. Request playlists featuring songs meaningful to your journey together. Add photo displays showcasing relationship highlights. Include items with sentimental value incorporated into the decoration scheme. Write letters to each other, read aloud by candlelight during your celebration. Plan small surprises—a piece of jewelry revealed with dessert, a meaningful gift unwrapped in the romantic setting. HIVY provides the candlelight stage; you write the memorable performance that unfolds upon it.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Special Touches That Make Candlelight Dinners Romantic</h3>
+            <p>
+              Small details accumulate into unforgettable romantic experiences. The path of rose petals leading to your table. The champagne (non-alcoholic) toast as you arrive. The background music shifting to "your song" at the perfect moment. The waiter addressing your partner by name. The unexpected dessert presentation. The photographer capturing genuine expressions before you notice. HIVY team members understand that romance lives in details, and our candlelight dinner packages include countless thoughtful touches while remaining open to your custom requests. Many couples share their partner's preferences before arrival, allowing us to incorporate surprise elements that demonstrate how well you know and care for each other.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">Popular Occasions for Candlelight Dinner Packages</h3>
+            <p>
+              While every occasion benefits from candlelight ambiance, certain celebrations particularly suit our dinner packages. Proposals find their perfect setting in Fairy Tale or Tent of Romance packages—the dramatic lighting creates ideal conditions for life-changing questions. Anniversaries transform from routine to remarkable when celebrated privately by candlelight. Valentine's Day bookings start filling months in advance as couples recognize that restaurants cannot match private candlelight experiences. Monthly anniversaries, relationship milestones, promotions, reconciliations, and "just because I love you" moments all warrant candlelight celebration. Many couples book quarterly candlelight dinners as relationship maintenance—dedicated time away from daily routines to reconnect in romantic settings.
+            </p>
+
+            <h3 className="text-xl font-bold text-amber-900 mt-8">How to Choose Between Candlelight Packages</h3>
+            <p>
+              Selecting the right candlelight package depends on several factors. Budget naturally influences decisions—Swing of LOVE at ₹5,100 offers excellent candlelight experience at accessible pricing, while Tent of Romance at ₹6,500 delivers premium luxury worth the investment for special occasions. Aesthetic preferences matter significantly: bohemian souls gravitate toward BoHo Chic, whimsical romantics love Swing of LOVE, and those wanting maximum elegance choose Tent of Romance. Occasion significance guides decisions—routine date nights suit entry-level packages while proposals and significant anniversaries deserve premium setups. Group composition determines whether Elite Group Setup (for friends or family inclusion) or couple-focused packages fit best. Our team happily shares photos and videos via WhatsApp to help you visualize each candlelight setting before deciding.
             </p>
           </div>
         </div>

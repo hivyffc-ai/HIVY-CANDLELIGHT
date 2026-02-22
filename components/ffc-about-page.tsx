@@ -14,8 +14,71 @@ import FFCReviewsSlider from '@/components/ffc-reviews-slider';
 import { siteConfig } from '@/lib/ffc-config';
 
 export default function FFCAboutPage() {
+  // FAQs for About page
+  const faqs = [
+    {
+      question: "What is HIVY and what does it offer?",
+      answer: "HIVY — Candle Light Dinner in Surat is Surat's premier private candlelight dinner venue, offering romantic dining experiences, intimate date nights, anniversary candlelight dinners, proposal dinners, and more. Located in Adajan, we provide fully private, beautifully candlelit setups exclusively for couples."
+    },
+    {
+      question: "Where is HIVY located in Surat?",
+      answer: "HIVY is located in Adajan, Surat, near Pratham Circle on Sevasi-Canal Road. We are easily accessible from all major areas of Surat including Vesu, Athwa, Piplod, City Light, Pal, Varachha, and Dumas Road."
+    },
+    {
+      question: "How long has HIVY been operating?",
+      answer: "HIVY has been creating magical candlelight dinner experiences for couples in Surat since 2019. In over 5 years, we have hosted 3,000+ romantic candlelight dinners and maintained a 4.9-star Google rating with hundreds of five-star reviews."
+    },
+    {
+      question: "Is HIVY only for couples?",
+      answer: "While most of our candlelight dinner packages are designed for couples, we also offer The Elite Group Setup (₹5,400) for small group celebrations like double dates and intimate gatherings. However, every booking is private — only your group is present during your candlelight dinner."
+    },
+    {
+      question: "What types of candlelight dinners can I book at HIVY?",
+      answer: "You can book romantic candlelight dinners, surprise candlelight date nights, anniversary candlelight dinners, proposal candlelight dinners, engagement dinners, special occasion dinners, and any other romantic candlelight dining experience."
+    },
+    {
+      question: "How many candlelight dinner packages does HIVY offer?",
+      answer: "HIVY offers five unique candlelight dinner packages: Swing of LOVE (₹5,100), BoHo Chic (₹5,700), Fairy Tale Proposals (₹6,300), Tent of Romance (₹6,500), and The Elite Group Setup (₹5,400). Each has a distinct romantic theme and candlelight setup."
+    },
+    {
+      question: "What is HIVY's Google rating?",
+      answer: "HIVY has a 4.9-star rating on Google with hundreds of verified reviews from happy couples. Our consistently high rating reflects our commitment to delivering exceptional romantic candlelight dinner experiences every single time."
+    },
+    {
+      question: "Does HIVY provide food or only candlelight decoration?",
+      answer: "HIVY provides a complete candlelight dinner experience that includes both premium candlelight decorations AND a multi-course gourmet meal. Every package includes a welcome drink, a multi-course meal (starter, main course, dessert), romantic candlelight ambiance with candles, fairy lights, rose petals, and background music."
+    },
+    {
+      question: "Can I visit HIVY before booking to see the candlelight setups?",
+      answer: "Yes! You are welcome to visit our venue and see the candlelight setups before booking. Contact us on WhatsApp to schedule a quick visit. You can also check our virtual tour, Instagram page, and Google reviews for photos and videos of actual candlelight dinners."
+    },
+    {
+      question: "How can I contact HIVY for more information?",
+      answer: `You can reach HIVY by calling or WhatsApping ${siteConfig.phone}. You can also email us at ${siteConfig.email} or visit our Contact page to fill out the booking form. Our team typically responds within minutes.`
+    }
+  ];
+
+  // FAQ Schema for About page
+  const aboutFaqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      {/* FAQ Schema for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutFaqJsonLd) }}
+      />
       <FFCHeader />
       
       {/* Hero Section */}
@@ -25,10 +88,10 @@ export default function FFCAboutPage() {
             <Heart className="h-4 w-4 mr-2" /> About Us
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
-            About HIVY - Place for Celebrations
+            About HIVY - Candle Light Dinner in Surat
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Surat's Premier Destination for Candlelight Dinners & Romantic Celebrations
+            Surat's Premier Destination for Romantic Candlelight Dinner Experiences
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
             <FFCBookNowButton pageTitle="About Page" className="text-lg px-8 py-6" />
@@ -51,20 +114,20 @@ export default function FFCAboutPage() {
                 Our Story
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif">
-                Where Love Stories Unfold Naturally
+                Where Romantic Candlelight Moments Unfold
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  At <strong>HIVY - Place for Celebrations</strong> in Surat's Gotri area, we understand the chaos of modern life leaves little room for romance. Couples crave intimate moments to express love, but finding the right venue—a place blending privacy, beauty, and magic—remains elusive.
+                  At <strong>HIVY - Candle Light Dinner in Surat</strong>, we understand the chaos of modern life leaves little room for romance. Couples crave intimate candlelight moments to express love, but finding the right venue—a place blending privacy, beauty, and magic—remains elusive.
                 </p>
                 <p>
-                  That's why we transformed a stunning <strong>rooftop into Surat's premier destination for candlelight dinners</strong>, complete with fairy lights, floral arches, and personalized decorations. Our romantic rooftop cafe offers the perfect escape for couples seeking a private celebration venue in Surat.
+                  That's why we transformed a stunning <strong>private venue into Surat's premier destination for candlelight dinners</strong>, complete with fairy lights, floral arches, and personalized decorations. Our romantic private venue offers the perfect escape for couples seeking an intimate candlelight dining experience in Surat.
                 </p>
                 <p>
-                  From heartfelt <strong>birthday surprises</strong> and <strong>anniversary celebrations</strong> to unforgettable <strong>marriage proposals</strong>, engagement reveals, <strong>pre-wedding shoots</strong>, pregnancy announcements, and last candlelight dinners before marriage, we've hosted <strong>500+ magical evenings</strong>.
+                  From heartfelt <strong>romantic date nights</strong> and <strong>anniversary candlelight dinners</strong> to unforgettable <strong>proposal dinners</strong>, engagement reveals, <strong>special occasion dinners</strong>, and intimate celebrations, we've hosted <strong>500+ magical candlelight evenings</strong>.
                 </p>
                 <p className="font-medium text-rose-900">
-                  Our mission: Create spaces where love stories unfold naturally.
+                  Our mission: Create the perfect candlelight dinner experience where romance blossoms naturally.
                 </p>
               </div>
               <div className="mt-6">
@@ -78,15 +141,15 @@ export default function FFCAboutPage() {
             <div className="order-1 lg:order-2">
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-100 to-amber-50 rounded-2xl overflow-hidden relative shadow-xl">
                 <Image
-                  src="/packages/swing-of-love/images/30.png"
-                  alt="HIVY - Place for Celebrations Surat - Romantic Swing of Love Setup for Candlelight Dinner"
+                  src="/hivy-images/5100/4.webp"
+                  alt="HIVY - Candle Light Dinner in Surat - Romantic Swing of Love Setup"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <p className="text-lg font-semibold">500+ Magical Evenings</p>
-                  <p className="text-sm opacity-90">Creating memories since 2020</p>
+                  <p className="text-lg font-semibold">500+ Candlelight Evenings</p>
+                  <p className="text-sm opacity-90">Creating romantic memories since 2020</p>
                 </div>
               </div>
             </div>
@@ -99,10 +162,10 @@ export default function FFCAboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {[
-              { icon: Users, number: "500+", label: "Magical Evenings" },
+              { icon: Users, number: "500+", label: "Candlelight Dinners" },
               { icon: Star, number: "4.9", label: "Google Rating" },
-              { icon: Award, number: "8", label: "Unique Setups" },
-              { icon: Clock, number: "5+", label: "Years of Love" },
+              { icon: Award, number: "8", label: "Romantic Setups" },
+              { icon: Clock, number: "5+", label: "Years of Romance" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-3">
@@ -123,15 +186,15 @@ export default function FFCAboutPage() {
             <div className="order-1">
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-100 to-amber-50 rounded-2xl overflow-hidden relative shadow-xl">
                 <Image
-                  src="/packages/swing-of-love/images/35.png"
-                  alt="HIVY - Place for Celebrations Team - Romantic Setup Surat"
+                  src="/hivy-images/5100/9.webp"
+                  alt="HIVY - Candle Light Dinner Team - Romantic Setup Surat"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <p className="text-lg font-semibold">Behind Every Glowing Smile</p>
-                  <p className="text-sm opacity-90">Our passionate team</p>
+                  <p className="text-lg font-semibold">Behind Every Romantic Evening</p>
+                  <p className="text-sm opacity-90">Our passionate candlelight dinner team</p>
                 </div>
               </div>
             </div>
@@ -140,20 +203,20 @@ export default function FFCAboutPage() {
                 Our Team
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif">
-                Behind Every Glowing Smile
+                Crafting Perfect Candlelight Experiences
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Meet the passionate team behind the magic at <strong>HIVY - Place for Celebrations</strong>. Committed to crafting unforgettable experiences, our dedicated staff is here to ensure that every detail of your visit is perfect.
+                  Meet the passionate team behind the magic at <strong>HIVY - Candle Light Dinner in Surat</strong>. Committed to crafting unforgettable candlelight dinner experiences, our dedicated staff ensures every detail of your romantic evening is perfect.
                 </p>
                 <p>
-                  From our talented chefs who bring culinary dreams to life, to our attentive servers who anticipate your every need, each member of our team is dedicated to creating moments of joy and romance for you and your loved one.
+                  From our talented chefs who bring gourmet dining dreams to life, to our attentive servers who anticipate your every need, each member of our team is dedicated to creating moments of romance and intimacy for you and your loved one.
                 </p>
                 <p>
-                  Whether you're planning a <strong>candlelight dinner in Surat</strong>, a <strong>birthday surprise for your girlfriend</strong>, an <strong>anniversary celebration</strong>, or a <strong>romantic proposal</strong>, our team handles everything from setup to cleanup so you can focus on love.
+                  Whether you're planning a <strong>candlelight dinner date</strong>, a <strong>romantic anniversary dinner</strong>, an <strong>intimate proposal dinner</strong>, or a <strong>special couples night out</strong>, our team handles everything from setup to service so you can focus on your partner.
                 </p>
                 <p className="font-medium text-rose-900">
-                  Join us and let us make your evening truly extraordinary.
+                  Join us and let us make your candlelight dinner truly extraordinary.
                 </p>
               </div>
             </div>
@@ -178,8 +241,8 @@ export default function FFCAboutPage() {
                     <MapPin className="h-5 w-5 text-rose-900" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Prime Gotri Rooftop Location</h3>
-                    <p className="text-gray-600">Breathtaking city views, private setups away from crowds on Sevasi-Canal Road. The best rooftop cafe in Surat for couples seeking privacy.</p>
+                    <h3 className="font-semibold text-lg mb-1">Prime Private Candlelight Venue</h3>
+                    <p className="text-gray-600">Beautiful romantic ambiance, private candlelight setups away from crowds on Sevasi-Canal Road. The best candlelight dinner restaurant in Surat for couples seeking intimacy.</p>
                   </div>
                 </div>
                 
@@ -188,8 +251,8 @@ export default function FFCAboutPage() {
                     <Award className="h-5 w-5 text-rose-900" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Custom Celebration Packages</h3>
-                    <p className="text-gray-600">Starting ₹4700, including mocktails, cakes, photographer, and themed decor for birthday surprises, anniversary celebrations, proposals, and more.</p>
+                    <h3 className="font-semibold text-lg mb-1">Premium Candlelight Dinner Packages</h3>
+                    <p className="text-gray-600">Starting ₹4700, including welcome drinks, gourmet meals, desserts, and stunning candlelight themed decor for romantic date nights, anniversaries, proposals, and special occasions.</p>
                   </div>
                 </div>
                 
@@ -198,8 +261,8 @@ export default function FFCAboutPage() {
                     <Heart className="h-5 w-5 text-rose-900" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Pan-India Appeal, Local Heart</h3>
-                    <p className="text-gray-600">Serving Surat couples while inspiring visitors with our Instagram-famous romantic setups and pre-wedding photoshoot venues.</p>
+                    <h3 className="font-semibold text-lg mb-1">Instagram-Worthy Candlelight Setups</h3>
+                    <p className="text-gray-600">Serving Surat couples with our Instagram-famous romantic candlelight dining setups perfect for capturing your special moments.</p>
                   </div>
                 </div>
                 
@@ -208,8 +271,8 @@ export default function FFCAboutPage() {
                     <Star className="h-5 w-5 text-rose-900" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">5-Star Experience Guaranteed</h3>
-                    <p className="text-gray-600">From setup to cleanup, our team handles everything so you focus on love. Couple-friendly cafe with complete privacy.</p>
+                    <h3 className="font-semibold text-lg mb-1">5-Star Candlelight Experience</h3>
+                    <p className="text-gray-600">From candlelight setup to gourmet service, our team handles everything so you focus on your romantic evening. Couples-only candlelight dining with complete privacy.</p>
                   </div>
                 </div>
               </div>
@@ -217,15 +280,15 @@ export default function FFCAboutPage() {
             <div className="order-1 lg:order-2">
               <div className="aspect-[4/3] bg-gradient-to-br from-amber-100 to-amber-50 rounded-2xl overflow-hidden relative shadow-xl">
                 <Image
-                  src="/packages/swing-of-love/images/40.png"
-                  alt="Why Choose HIVY - Place for Celebrations - Romantic Setup Surat"
+                  src="/hivy-images/5100/10.webp"
+                  alt="Why Choose HIVY - Candle Light Dinner in Surat - Romantic Setup"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <p className="text-lg font-semibold">5-Star Experience</p>
-                  <p className="text-sm opacity-90">Trusted by 500+ couples</p>
+                  <p className="text-lg font-semibold">5-Star Candlelight Experience</p>
+                  <p className="text-sm opacity-90">Trusted by 500+ couples for romantic dinners</p>
                 </div>
               </div>
             </div>
@@ -241,29 +304,55 @@ export default function FFCAboutPage() {
               Our Journey
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-              The HIVY Story — Surat's Most Trusted Candle Light Dinner Venue
+              The HIVY Story — Surat's Most Trusted Candlelight Dinner Venue
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
             <p>
-              HIVY — Place for Celebrations was born from a simple yet powerful idea: every couple in Surat deserves a beautiful, private space to celebrate their love without compromise. What started in 2019 as a small rooftop setup with fairy lights and a handful of candles has grown into Surat's most sought-after romantic dining destination, trusted by over 3,000 couples for their most cherished milestones.
+              HIVY — Candle Light Dinner in Surat was born from a simple yet powerful idea: every couple in Surat deserves a beautiful, private space to enjoy an intimate candlelight dinner without compromise. What started in 2019 as a small private setup with fairy lights and a handful of candles has grown into Surat's most sought-after candlelight dinner destination, trusted by over 3,000 couples for their most romantic evenings.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">From a Dream to Surat's #1 Romantic Venue</h3>
+            <h3 className="text-xl font-bold text-neutral-900 mt-8">From a Dream to Surat's #1 Candlelight Dinner Venue</h3>
             <p>
-              Our founders saw a gap in Surat's dining scene — while the city had plenty of restaurants, none offered the level of privacy, personalization, and romance that couples truly craved. We set out to build a venue where every evening feels like a fairy tale, where every detail is thoughtfully curated, and where couples can express their love freely. Today, with five unique themed setups, a 4.9-star Google rating, and hundreds of five-star reviews, HIVY has become synonymous with romantic celebrations in Surat.
+              Our founders saw a gap in Surat's dining scene — while the city had plenty of restaurants, none offered the level of privacy, personalization, and romantic candlelight ambiance that couples truly craved. We set out to build a venue where every candlelight dinner feels like a fairy tale, where every detail is thoughtfully curated, and where couples can enjoy intimate moments freely. Today, with five unique themed setups, a 4.9-star Google rating, and hundreds of five-star reviews, HIVY has become synonymous with romantic candlelight dining in Surat.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">What We Offer — Beyond Just a Candle Light Dinner</h3>
+            <h3 className="text-xl font-bold text-neutral-900 mt-8">What We Offer — The Complete Candlelight Dinner Experience</h3>
             <p>
-              At HIVY, we host a wide range of celebrations: candle light dinners for couples, surprise birthday parties, wedding anniversary celebrations, marriage proposals, engagement reveals, pre-wedding photoshoots, pregnancy announcements, farewell dinners, and even last candle light dinners before marriage. Each celebration is backed by our complete setup-to-cleanup service, which means you don't need to worry about anything — our team handles the decorations, lighting, music, food, cake, and photography coordination so you can focus entirely on enjoying your time together.
+              At HIVY, we specialize in premium candlelight dinners: romantic date nights, surprise candlelight dinners, anniversary candlelight celebrations, marriage proposal dinners, engagement dinners, and intimate couple experiences. Each candlelight dinner is backed by our complete setup-to-service approach, which means you don't need to worry about anything — our team handles the candle arrangements, lighting, music, gourmet food, desserts, and romantic ambiance so you can focus entirely on enjoying your candlelight dinner together.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">Our Commitment to Excellence</h3>
+            <h3 className="text-xl font-bold text-neutral-900 mt-8">Our Commitment to Candlelight Excellence</h3>
             <p>
-              Quality, privacy, and attention to detail are the three pillars of everything we do at HIVY. Each of our five packages — Swing of LOVE, BoHo Chic, Fairy Tale Proposals, Tent of Romance, and The Elite Group Setup — is designed with a distinct aesthetic and mood. From bohemian chic to fairy-tale elegance, every setup features premium decorations, carefully arranged candle arrangements, fresh rose petals, custom lighting, and comfortable seating. Our gourmet menu, crafted by experienced chefs, includes a multi-course meal with Indian and Continental options, complemented by welcome drinks, desserts, and a celebratory cake.
+              Quality, privacy, and attention to detail are the three pillars of every candlelight dinner at HIVY. Each of our five packages — Swing of LOVE, BoHo Chic, Fairy Tale Proposals, Tent of Romance, and The Elite Group Setup — is designed with a distinct romantic aesthetic and mood. From bohemian chic to fairy-tale elegance, every candlelight setup features premium candle arrangements, carefully arranged rose petals, custom lighting, and comfortable seating. Our gourmet menu, crafted by experienced chefs, includes a multi-course meal with Indian and Continental options, complemented by welcome drinks and desserts.
             </p>
-            <h3 className="text-xl font-bold text-neutral-900 mt-8">Why 3,000+ Couples Trust HIVY</h3>
+            <h3 className="text-xl font-bold text-neutral-900 mt-8">Why 3,000+ Couples Trust HIVY for Candlelight Dinners</h3>
             <p>
-              The reason thousands of couples continue to choose HIVY is simple — we deliver on our promise every single time. When you book with HIVY, you get complete privacy (the venue is exclusively yours), a meticulously prepared setup that matches your expectations, punctual and professional service, and an evening that feels genuinely special. Our 4.9-star Google rating isn't just a number — it reflects the love, effort, and passion our team puts into every celebration. We invite you to read our reviews and see for yourself why couples across Surat, Gujarat, and beyond choose HIVY for their most important moments.
+              The reason thousands of couples continue to choose HIVY for their candlelight dinners is simple — we deliver on our promise every single time. When you book your candlelight dinner with HIVY, you get complete privacy (the venue is exclusively yours), a meticulously prepared candlelight setup that matches your expectations, punctual and professional service, and an evening that feels genuinely romantic. Our 4.9-star Google rating isn't just a number — it reflects the love, effort, and passion our team puts into every candlelight dinner. We invite you to read our reviews and see for yourself why couples across Surat, Gujarat, and beyond choose HIVY for their romantic candlelight dining experiences.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Candlelight Philosophy Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-amber-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-8 text-amber-800">Our Philosophy: The Magic of Candlelight</h2>
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+            <p>There's a reason candlelight has been synonymous with romance for centuries. The soft, flickering glow creates an atmosphere that no artificial light can replicate – intimate, warm, and deeply romantic. At HIVY, we've built our entire experience around this timeless element, creating Surat's premier candlelight dining destination where couples reconnect, celebrate, and fall in love all over again.</p>
+            
+            <h3 className="text-2xl font-semibold text-amber-700">The Science of Romance</h3>
+            <p>Candlelight isn't just aesthetically pleasing – it actually creates a physiological response that promotes relaxation and connection. The warm tones of flickering flames soften features, create intimate shadows, and naturally encourage couples to lean closer and speak more softly. At HIVY, we've perfected the art of candlelight placement, using strategic positioning to maximize both ambiance and comfort while ensuring safety throughout your dining experience.</p>
+            <p>Research shows that warm, dim lighting triggers the release of oxytocin – the bonding hormone – making candlelit environments ideal for deepening emotional connections. We've applied this understanding to every aspect of our venue design, ensuring that the scientific benefits of candlelight enhance the romantic atmosphere. The result is an environment where conversation flows naturally, inhibitions fade, and couples rediscover the magic of focused attention on each other.</p>
+            
+            <h3 className="text-2xl font-semibold text-amber-700">Beyond the Flame</h3>
+            <p>While candlelight sets the foundation, our romantic dining experience extends far beyond. Every element at HIVY is chosen to enhance the romantic atmosphere – from the carefully curated playlist of soft melodies to the precise arrangement of our table settings. Fresh roses, premium linens, and thoughtful décor details work in harmony to create a cocoon of romance that transports couples away from daily stress and into a world designed purely for connection.</p>
+            <p>The sensory experience at HIVY engages every sense. Subtle fragrances of fresh flowers complement the visual beauty; the gentle crackle of candles provides an ambient soundtrack; the texture of quality linens against your skin reinforces the luxurious atmosphere. This multi-sensory approach ensures that your candlelight dinner isn't just seen – it's experienced in a way that creates lasting memories.</p>
+            
+            <h3 className="text-2xl font-semibold text-amber-700">Culinary Excellence by Candlelight</h3>
+            <p>A truly memorable candlelight dinner requires exceptional food presented beautifully. Our culinary team understands that dining by candlelight is both a visual and culinary experience. Each dish is crafted not only for taste but for presentation, ensuring that your meal looks as romantic as the setting surrounding it. From appetizers to desserts, every course is designed to complement and enhance your candlelight dining experience.</p>
+            <p>The interplay between light and food is a crucial consideration in our kitchen. Colors appear differently by candlelight, and we select ingredients and plating techniques that maximize visual appeal under warm lighting. The result is food that photographs beautifully for your memories while delivering exceptional flavors that make your dinner as satisfying to the palate as it is to the eye.</p>
+            
+            <h3 className="text-2xl font-semibold text-amber-700">Your Private Candlelit Sanctuary</h3>
+            <p>Unlike crowded restaurants where candlelit tables sit mere feet from other diners, HIVY offers complete privacy. Your candlelight dinner unfolds in a space entirely yours, where whispered conversations remain private and romantic gestures go unobserved. This privacy transforms an ordinary dinner into an intimate experience, allowing couples to be fully present with each other without the self-consciousness that comes from public dining.</p>
+            <p>Privacy in our candlelit spaces means freedom – freedom to express emotions openly, to share vulnerable moments, and to celebrate your relationship authentically. Whether you're having a difficult conversation, sharing exciting news, or simply enjoying each other's company in comfortable silence, the private nature of HIVY's candlelight experience provides the perfect backdrop. This privacy has made HIVY the preferred venue for proposals, reconciliations, and every intimate milestone in between.</p>
           </div>
         </div>
       </section>
@@ -279,52 +368,11 @@ export default function FFCAboutPage() {
               <HelpCircle className="h-4 w-4 mr-2" /> Common Questions
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-              FAQs About HIVY - Place for Celebrations
+              FAQs About HIVY - Candle Light Dinner in Surat
             </h2>
           </div>
           <Accordion type="single" collapsible className="space-y-4">
-            {[
-              {
-                question: "What is HIVY and what does it offer?",
-                answer: "HIVY — Place for Celebrations is Surat's premier private candle light dinner venue, offering romantic dining experiences, surprise birthday setups, anniversary celebrations, marriage proposals, and more. Located in Adajan, we provide fully private, beautifully decorated setups exclusively for couples."
-              },
-              {
-                question: "Where is HIVY located in Surat?",
-                answer: "HIVY is located in Adajan, Surat, near Pratham Circle on Sevasi-Canal Road. We are easily accessible from all major areas of Surat including Vesu, Athwa, Piplod, City Light, Pal, Varachha, and Dumas Road."
-              },
-              {
-                question: "How long has HIVY been operating?",
-                answer: "HIVY has been creating magical celebrations for couples in Surat since 2019. In over 5 years, we have hosted 3,000+ romantic evenings and maintained a 4.9-star Google rating with hundreds of five-star reviews."
-              },
-              {
-                question: "Is HIVY only for couples?",
-                answer: "While most of our packages are designed for couples, we also offer The Elite Group Setup (₹5,400) for small group celebrations like double dates, engagement parties, and birthday gatherings. However, every booking is private — only your group is present during your celebration."
-              },
-              {
-                question: "What types of celebrations can I host at HIVY?",
-                answer: "You can host candle light dinners, surprise birthday celebrations, anniversary dinners, marriage proposals, engagement reveals, pre-wedding photoshoots, pregnancy announcements, farewell dinners, congratulation parties, and any other romantic or private celebration."
-              },
-              {
-                question: "How many packages does HIVY offer?",
-                answer: "HIVY offers five unique candle light dinner packages: Swing of LOVE (₹5,100), BoHo Chic (₹5,700), Fairy Tale Proposals (₹6,300), Tent of Romance (₹6,500), and The Elite Group Setup (₹5,400). Each has a distinct theme and set of inclusions."
-              },
-              {
-                question: "What is HIVY's Google rating?",
-                answer: "HIVY has a 4.9-star rating on Google with hundreds of verified reviews from happy couples. Our consistently high rating reflects our commitment to delivering exceptional romantic dining experiences every single time."
-              },
-              {
-                question: "Does HIVY provide food or only decoration?",
-                answer: "HIVY provides a complete experience that includes both premium decorations AND a multi-course gourmet meal. Every package includes a welcome drink, a multi-course meal (starter, main course, dessert), romantic ambiance with candles, fairy lights, rose petals, and background music."
-              },
-              {
-                question: "Can I visit HIVY before booking to see the venue?",
-                answer: "Yes! You are welcome to visit our venue and see the setups before booking. Contact us on WhatsApp to schedule a quick visit. You can also check our virtual tour, Instagram page, and Google reviews for photos and videos of actual celebrations."
-              },
-              {
-                question: "How can I contact HIVY for more information?",
-                answer: `You can reach HIVY by calling or WhatsApping ${siteConfig.phone}. You can also email us at ${siteConfig.email} or visit our Contact page to fill out the booking form. Our team typically responds within minutes.`
-              }
-            ].map((faq, index) => (
+            {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg border border-amber-200 px-6">
                 <AccordionTrigger className="text-left font-medium hover:no-underline">
                   {faq.question}
