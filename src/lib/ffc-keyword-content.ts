@@ -550,4 +550,8 @@ export function generateKeywordPageUniqueContent(
   };
 }
 
+export function getKeywordContent(slug: string): KeywordPageUniqueContent | null {
+  return null;
+}
+
 export default generateKeywordPageUniqueContent;
