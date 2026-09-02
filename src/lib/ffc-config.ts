@@ -52,11 +52,11 @@ export const siteConfig = {
   city: "Surat",
   website: "https://candlelightdinnersurat.com",
   colors: {
-    primary: "#7F1D1D", // Deep Wine Red
+    primary: "#C2410C", // Warm Ember Orange
     secondary: "#D4A574", // Warm Gold
     accent: "#F59E0B", // Candle Light Amber
-    gradient: "from-rose-900 to-amber-800",
-    gradientHover: "from-rose-950 to-amber-900",
+    gradient: "from-orange-900 to-amber-800",
+    gradientHover: "from-orange-950 to-amber-900",
     lightBg: "bg-amber-50",
     darkBg: "bg-neutral-900",
     text: "text-neutral-800"

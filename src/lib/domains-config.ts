@@ -105,8 +105,8 @@ export const domains: DomainConfig[] = [
       primary: "#EC4899", // Pink
       secondary: "#F472B6",
       accent: "#DB2777",
-      gradient: "from-pink-500 to-rose-600",
-      gradientHover: "from-pink-600 to-rose-700",
+      gradient: "from-pink-500 to-orange-600",
+      gradientHover: "from-pink-600 to-orange-700",
       lightBg: "bg-pink-50",
       darkBg: "bg-pink-900",
       text: "text-pink-600"
@@ -205,8 +205,8 @@ export const domains: DomainConfig[] = [
       primary: "#EF4444", // Red/Rose
       secondary: "#F87171",
       accent: "#DC2626",
-      gradient: "from-red-500 to-rose-600",
-      gradientHover: "from-red-600 to-rose-700",
+      gradient: "from-red-500 to-orange-600",
+      gradientHover: "from-red-600 to-orange-700",
       lightBg: "bg-red-50",
       darkBg: "bg-red-900",
       text: "text-red-600"
